@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>בלי חדשות – מפסיקים רעש, מתחילים לחשוב</title>
+  <meta name="description" content="אתגר 30 יום בלי חדשות: פחות רעש, יותר שקט ומיקוד. למה חדשות מוטות ומה עושים במקום – מדריך קצר ופשוט.">
+  <meta name="theme-color" content="#0f172a">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="בלי חדשות – מפסיקים רעש, מתחילים לחשוב">
+  <meta property="og:description" content="אתגר 30 יום בלי חדשות: פחות רעש, יותר שקט ומיקוד. למה חדשות מוטות ומה עושים במקום – מדריך קצר ופשוט.">
+  <meta property="og:image" content="">
+  <meta property="og:locale" content="he_IL">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <style>
+    :root{
+      --bg: #0f172a; /* slate-900 */
+      --fg: #0b1220; /* dark text */
+      --muted:#64748b; /* slate-500 */
+      --brand:#0ea5e9; /* sky-500 */
+      --card:#ffffff;
+      --accent:#94a3b8; /* slate-400 */
+      --danger:#ef4444;
+      --ok:#10b981;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      color: #0f172a;
+      background: #f8fafc;
+      line-height:1.6;
+    }
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter:saturate(180%) blur(8px);
+      background: rgba(255,255,255,.85);
+      border-bottom:1px solid #e2e8f0;
+    }
+    .wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+    .nav a{margin-inline:8px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--bg);color:#fff;
+      padding:.6rem 1rem;border-radius:999px;border:0;cursor:pointer}
+    .btn.secondary{background:#e2e8f0;color:#0f172a}
+    .btn:focus{outline:2px solid var(--brand);outline-offset:2px}
+    .hero{padding:48px 0 24px; display:grid; grid-template-columns:1fr; gap:20px}
+    .card{background:var(--card);border:1px solid #e2e8f0;border-radius:16px;padding:16px}
+    h1{font-size:clamp(28px,4vw,44px);margin:0 0 6px 0;line-height:1.2}
+    h2{font-size:clamp(22px,3vw,32px);margin:0 0 10px 0}
+    p{margin:8px 0}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:16px}
+    .cols-3{grid-template-columns:repeat(1,1fr)}
+    @media(min-width:800px){.hero{grid-template-columns:1.2fr .8fr}.cols-3{grid-template-columns:repeat(3,1fr)}}
+    .kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .kpi{background:#f1f5f9;border-radius:12px;padding:10px}
+    .kpi b{font-size:22px}
+    section{padding:36px 0}
+    footer{border-top:1px solid #e2e8f0;padding:24px 0;color:#475569;font-size:13px}
+    .list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+    .list li{display:flex;gap:8px;align-items:flex-start}
+    .tag{display:inline-block;background:#e2e8f0;border-radius:999px;padding:.15rem .6rem;font-size:12px}
+    .note{font-size:12px;color:#64748b}
+    .input{width:100%;padding:.6rem .8rem;border:1px solid #cbd5e1;border-radius:12px}
+    .pill{display:inline-flex;align-items:center;background:#e2e8f0;border-radius:999px;padding:.2rem .6rem;font-size:12px;gap:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div><strong>No News Project</strong></div>
+      <nav>
+        <a href="#why">למה לא חדשות</a>
+        <a href="#how">מה במקום</a>
+        <a href="#challenge">אתגר 30 יום</a>
+        <a href="#faq">שאלות נפוצות</a>
+      </nav>
+      <a class="btn" href="#challenge">מתחילים</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>מפסיקים חדשות. <span class="muted">מתחילים לחשוב.</span></h1>
+        <p class="muted">חדשות הן מוצר שמוכר תשומת לב באמצעות פחד וקונפליקט. כשאנחנו צורכים אותן ללא סינון – אנחנו מוכרים את הזמן, הריכוז והדעה שלנו. הגיע הזמן לקחת בעלות.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+          <a class="btn" href="#challenge">אני בתוך אתגר 30 הימים</a>
+          <a class="btn secondary" href="#why">למה זה עובד</a>
+        </div>
+        <p class="note">אין הטיה מפלגתית. רק חופש מחשבה וזמן נקי.</p>
+      </div>
+      <div class="card">
+        <h2>החשבון הפשוט</h2>
+        <div class="kpis">
+          <div class="kpi"><div>זמן ממוצע ליום</div><b>45 ד׳</b></div>
+          <div class="kpi"><div>כותרות שנשכחות</div><b>~99%</b></div>
+          <div class="kpi" style="grid-column:1/3">
+            <div>ריכוז חוזר אחרי</div><b>~23 ד׳</b>
+            <div class="note">כל מעבר כותרות גובה זמן התאוששות.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>חדשות הן עסק, לא שירות</h3>
+          <p class="muted">המודל הכלכלי מתגמל הקצנה, פחד וקונפליקט כי זה מה שמוכר תשומת לב. כשזה התמריץ – ההטיה מערכתית.</p>
+        </div>
+        <div class="card">
+          <h3>רעשים מחליפים הבנה</h3>
+          <p class="muted">זרם בלתי פוסק של כותרות מונע למידה עמוקה ושיקול דעת. ידע אמיתי דורש זמן, שקט ורצף.</p>
+        </div>
+        <div class="card">
+          <h3>זמן הוא המטבע שלך</h3>
+          <p class="muted">בכל דקה של חדשות אתה משלם בריכוז, ביצירתיות ובשקט נפשי. הפסקה יוצרת החזר מיידי.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <h2>מה עושים במקום חדשות?</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <b class="pill">מקורות ראשוניים</b>
+          <p class="muted">במקום פרשנויות – קרא את המקור (דוחות, נתונים, נאומים) אחת לשבוע.</p>
+        </div>
+        <div class="card">
+          <b class="pill">שיחה עם אנשים</b>
+          <p class="muted">שאל מומחים, אנשי שטח ושכנים. מציאות חיה עדיפה על פיד.</p>
+        </div>
+        <div class="card">
+          <b class="pill">למידה עמוקה</b>
+          <p class="muted">ספרים, קורסים ומאמרים ארוכים. פחות גירויים, יותר הבנה.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenge">
+      <div class="grid" style="grid-template-columns:1fr;gap:16px">
+        <div class="card">
+          <h2>אתגר 30 יום בלי חדשות</h2>
+          <ul class="list">
+            <li>❌ אפליקציות חדשות והתראות – מחיקה זמנית.</li>
+            <li>❌ אין גלילת חדשות ברשתות.</li>
+            <li>✅ חלון מידע שבועי בן שעה: סיכום ענייני ממקורות ראשוניים בלבד.</li>
+            <li>✅ יומן יומי קצר: כמה זמן חסכת? איך הרגשת?</li>
+          </ul>
+          <p><a class="btn" href="#faq">יש לי שאלות</a></p>
+          <p class="note">טיפ: שמור סימנייה עם תאריך סיום בעוד 30 יום.</p>
+        </div>
+        <div class="card">
+          <h3>מחשבון החזר זמן</h3>
+          <label for="mins" class="note">כמה דקות חדשות ביום בממוצע?</label>
+          <input id="mins" class="input" type="number" value="45" min="0" step="5" oninput="calc()" />
+          <div id="out" style="margin-top:8px"><b>~22 שעות</b> בחזרה ב־30 יום</div>
+          <script>
+            function calc(){
+              var v = parseFloat(document.getElementById('mins').value||0);
+              var saved = Math.round((v*30)/60);
+              document.getElementById('out').innerHTML = "<b>~"+saved+" שעות</b> בחזרה ב־30 יום";
+            }
+            calc();
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>שאלות נפוצות</h2>
+      <div class="grid">
+        <div class="card">
+          <b>איך אדע אם קרה משהו דחוף?</b>
+          <p class="muted">קבע אדם אחד שאתה סומך עליו שיעדכן רק במקרה חירום אמיתי (אירוע מקומי שמשפיע עליך ישירות). בנוסף, חלון המידע השבועי מסנן רעשי רקע.</p>
+        </div>
+        <div class="card">
+          <b>זה לא קיצוני?</b>
+          <p class="muted">התלות בחדשות היא הקיצונית. אתגר 30 יום הוא ניסוי זמני ומדוד שמחזיר לך שליטה; בסוף אתה מחליט.</p>
+        </div>
+        <div class="card">
+          <b>ומה עם אחריות אזרחית?</b>
+          <p class="muted">אחריות אזרחית נבנית מלמידה רצינית ומעשים במציאות – לא מגלילה אינסופית. קרא מסמכים מקוריים, דבר עם אנשים וחפש עשייה מקומית.</p>
+        </div>
+        <div class="card">
+          <b>אני חייב להיות מעודכן לעבודה</b>
+          <p class="muted">הפרד בין עדכון מקצועי לבין גלילה. הגדר מקורות מחקריים/רשמיים בלבד ובחלון זמן מוגדר.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <h2>יש לכם סיפור על החיים בלי חדשות?</h2>
+        <p class="muted">שלחו מייל ל־<a href="mailto:you@example.com">you@example.com</a> עם הסיפור שלכם. נפרסם סיפורים נבחרים (בעילום שם אם תרצו).</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© <span id="yr"></span> No News Project · כל הזכויות שמורות.</div>
+      <div class="note">העמוד אינו תחליף לשיקול דעת. בחרו בעצמכם מה נכנס לראש וללב.</div>
+    </div>
+    <script>document.getElementById('yr').textContent = new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
